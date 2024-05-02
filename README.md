@@ -1,1 +1,3 @@
-https://github.com/urob/zmk-config
+https://github.com/minusfive/zmk-config
+
+![](img/corne.svg)
