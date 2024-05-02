@@ -1,15 +1,13 @@
-/* source key position labels */
-#include "zmk-helpers/key-labels/36.h"
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
-/* map Zen's extra keys */
-#define X_LH  &kp LGUI      // thumb row, left
-#define X_RH  &smart_mouse  // thumb row, right
+#include "base.dtsi"
 
-/* activate bluetooth */
-#define CONFIG_WIRELESS 1
+#include "L1_colemak-dh.dtsi"
 
-/* source the main keymap */
-#include "base.keymap"
-
-/* use 5-column layout for Zen */
-ZMK_APPLY_MATRIX_TRANSFORM(five_column_transform)
+// Other layers
+#include "L2.dtsi"
+#include "L3.dtsi"
