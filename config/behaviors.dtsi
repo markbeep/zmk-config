@@ -41,7 +41,7 @@
     /omit-if-no-ref/ smart_shift: smart_shift {
       label = "SMART_SHIFT";
       compatible = "zmk,behavior-mod-morph";
-      bindings = <&sk RSHFT>, <&caps_word>;
+      bindings = <&sk LSHFT>, <&caps_word>;
       mods = <(MOD_RSFT)>;
       #binding-cells = <0>;
     };

@@ -1,125 +1,134 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   '1':
-  - [ESC, Q, W, F, P, B, J, L, U, Y]
-  - - ''''
-    - CANCEL
-    - {t: BACKSPACE, s: DELETE}
-    - {t: A, h: LCTRL}
-    - {t: R, h: LGUI}
-    - {t: S, h: LALT}
-    - {t: T, h: Sft+Ctl+ LALT}
-    - G
-    - M
-    - {t: N, h: Sft+Ctl+ LALT}
-  - - {t: E, h: RALT}
-    - {t: I, h: RGUI}
-    - {t: O, h: RCTRL}
-    - ENTER
-    - {t: ▽, type: trans}
-    - Z
-    - X
-    - C
-    - D
-    - V
-  - - K
-    - H
-    - ','
-    - .
-    - /
-    - {t: ▽, type: trans}
-    - TAB
-    - {t: '&num_dance', h: '2'}
-    - {t: RSHFT, h: sticky, s: '&caps_word'}
-    - {t: SPACE, h: LSHFT}
-  - - {t: '&num_dance', h: '3'}
-    - '`'
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - {t: '''', s: '"'}
+  - $$mdi:close-box$$
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$', type: backspace}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: R, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: T, h: 'Sft+Ctl+ $$mdi:apple-keyboard-option$$'}
+  - G
+  - M
+  - {t: N, h: 'Sft+Ctl+ $$mdi:apple-keyboard-option$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: I, h: RGUI}
+  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
+  - {t: L2, h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '&num_dance', h: '3'}
+  - {t: '`', s: '~'}
   '2':
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - PREV
-    - VOL DN
-    - VOL UP
-    - NEXT
-  - - MUTE
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: LCTRL, h: sticky}
-    - {t: LALT, h: sticky}
-    - {t: LCMD, h: sticky}
-    - {t: Sft+Ctl+ LALT, h: sticky}
-    - {t: ▽, type: trans}
-    - LEFT
-    - DOWN
-  - - UP
-    - RIGHT
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: '&cmo 1', type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - '&cmo 2'
-    - {t: ▽, type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
+  - $$mdi:volume-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: 'Sft+Ctl+ $$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:close-box$$', h: L2}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&cmo 2'
+  - {t: '$$mdi:transfer$$', type: trans}
   '3':
-  - - {t: ▽, type: trans}
-    - F1
-    - F2
-    - F3
-    - F4
-    - F5
-    - {t: ▽, type: trans}
-    - '7'
-    - '8'
-    - '9'
-  - - {t: ▽, type: trans}
-    - POWER
-    - '&sys_reset'
-    - F6
-    - F7
-    - F8
-    - F9
-    - F10
-    - '0'
-    - '4'
-  - - '5'
-    - '6'
-    - {t: ▽, type: trans}
-    - '&sys_reset'
-    - {t: ▽, type: trans}
-    - F11
-    - F12
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - '1'
-    - '2'
-    - '3'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '&cmo 1'
-    - {t: ▽, type: trans}
-    - CAPSLOCK
-  - - {t: '&cmo 2', type: held}
-    - {t: ▽, type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:power-standby$$
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: '0', s: )}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F11
+  - F12
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:close-box$$', h: L2}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
+  - {t: '&cmo 2', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 13]
   k: '!'
@@ -152,23 +161,23 @@ combos:
   k: )
   l: ['1', '2']
 - p: [7, 19]
-  k: '-'
+  k: {h: '-', s: _}
   l: ['1', '2', '3']
 - p: [8, 20]
-  k: '='
+  k: {h: '=', s: +}
   l: ['1', '2', '3']
 - p: [9, 21]
-  k: ;
+  k: {h: ;, s: ':'}
   l: ['1', '2', '3']
 - p: [19, 31]
-  k: '['
+  k: {h: '[', s: '{'}
   l: ['1', '2', '3']
 - p: [20, 32]
-  k: ']'
+  k: {h: ']', s: '}'}
   l: ['1', '2', '3']
 - p: [21, 33]
-  k: \
+  k: {h: \, s: '|'}
   l: ['1', '2', '3']
 - p: [6, 7]
-  k: PP
+  k: $$mdi:play-pause$$
   l: ['1', '2', '3']
