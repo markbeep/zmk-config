@@ -18,14 +18,53 @@ concurrency:
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
-    permissions:
-      contents: write
-    with:
-      install_branch: "main" # branch to install keymap-drawer from
-      keymap_patterns: "config/*.keymap" # path to the keymaps to parse
-      config_path: "keymap_drawer.config.yaml" # config file, ignored if not exists
-      output_folder: "img" # path to save produced SVGs
-      # commit_message: "Draw: ${{ github.event.head_commit.message }}"
-      amend_commit: true # whether to amend the commit or create a new one
+    runs-on: ubuntu-latest
+    outputs:
+      drawings: ${{ steps.artifact-upload-step.outputs.artifact-id }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # So the reference to the parent commit is available when amending
+          # See:
+          # - https://github.com/stefanzweifel/git-auto-commit-action#using---amend-and---no-edit-as-commit-options
+          # - https://github.com/stefanzweifel/git-auto-commit-action/issues/159#issuecomment-845347950
+          # - https://github.com/actions/checkout
+          fetch-depth: 2
+          submodules: recursive
 
+      - name: Install keymap-drawer (pypi)
+        run: python3 -m pip install keymap-drawer
+
+      - name: Draw keymaps
+        id: draw
+        run: |
+          keymap parse -c 10 -z config/corne.keymap >img/corne.yaml
+          keymap draw img/corne.yaml >img/corne.svg
+
+      - name: Get last commit message
+        id: last_commit_message
+        run: |
+          echo "msg=$(git log -1 --pretty=%s)" >> $GITHUB_OUTPUT
+
+      - name: Commit updated images
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: "img/*.svg img/*.yaml"
+          # So the previous commit is amended instead of creating a new one when desired
+          # See:
+          # - https://github.com/stefanzweifel/git-auto-commit-action#using---amend-and---no-edit-as-commit-options
+          # - https://github.com/stefanzweifel/git-auto-commit-action/issues/159#issuecomment-845347950
+          # - https://github.com/actions/checkout
+          commit_message: "${{ steps.last_commit_message.outputs.msg }}"
+          commit_options: "--amend --no-edit"
+          push_options: "--force-with-lease"
+          skip_fetch: true
+
+      - name: Artifact upload
+        id: artifact-upload-step
+        uses: actions/upload-artifact@v4
+        with:
+          name: "keymap"
+          path: |
+            img/corne.svg
