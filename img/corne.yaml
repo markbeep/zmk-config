@@ -30,8 +30,8 @@ layers:
     - {t: ▽, type: trans}
     - TAB
     - {t: '&num_dance', h: '2'}
-    - {t: SPACE, h: LSHFT}
-    - {t: RSHFT, h: sticky, s: '&caps_word'}
+    - {t: LSHFT, h: sticky, s: '&caps_word'}
+    - {t: SPACE, h: RSHFT}
   - - {t: '&num_dance', h: '3'}
     - '`'
   '2':
