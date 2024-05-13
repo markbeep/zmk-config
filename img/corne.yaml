@@ -53,11 +53,11 @@ layers:
     - {t: LCMD, h: sticky}
     - {t: Sft+Ctl+ LALT, h: sticky}
     - {t: ▽, type: trans}
-    - LEFT
-    - DOWN
-  - - UP
-    - RIGHT
     - {t: ▽, type: trans}
+    - LEFT
+  - - DOWN
+    - UP
+    - RIGHT
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}

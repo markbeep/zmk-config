@@ -14,7 +14,7 @@
     &trans          &trans          &trans          &trans          &trans          &trans              &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT      &kp C_MUTE      &trans
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 //  12              13              14              15              16              17                  18              19              20              21              22              23
-    &trans          &sk LCTRL       &sk LALT        &sk LCMD        &sk MEH         &trans              &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &trans
+    &trans          &sk LCTRL       &sk LALT        &sk LCMD        &sk MEH         &trans              &trans          &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 //  24              25              26              27              28              29                  30              31              32              33              34              35
     &trans          &trans          &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &trans          &trans
