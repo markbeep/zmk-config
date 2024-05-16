@@ -49,8 +49,8 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: LCTRL, h: sticky}
+    - {t: LGUI, h: sticky}
     - {t: LALT, h: sticky}
-    - {t: LCMD, h: sticky}
     - {t: Sft+Ctl+ LALT, h: sticky}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
