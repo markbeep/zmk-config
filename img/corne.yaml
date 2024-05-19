@@ -47,7 +47,7 @@ layers:
     - NEXT
   - - MUTE
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {t: BACKSPACE, s: DELETE}
     - {t: LCTRL, h: sticky}
     - {t: LGUI, h: sticky}
     - {t: LALT, h: sticky}
@@ -58,7 +58,7 @@ layers:
   - - DOWN
     - UP
     - RIGHT
-    - {t: ▽, type: trans}
+    - ENTER
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -90,7 +90,7 @@ layers:
     - '9'
   - - {t: ▽, type: trans}
     - POWER
-    - '&sys_reset'
+    - {t: BACKSPACE, s: DELETE}
     - F6
     - F7
     - F8
@@ -101,7 +101,7 @@ layers:
   - - '5'
     - '6'
     - {t: ▽, type: trans}
-    - '&sys_reset'
+    - ENTER
     - {t: ▽, type: trans}
     - F11
     - F12
