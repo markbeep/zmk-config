@@ -39,7 +39,7 @@ layers:
     - {t: ▽, type: trans}
     - ESC
     - '&cmo 1'
-    - {t: LSHFT, h: SPACE}
+    - LSHFT
     - {t: SPACE, h: RSHFT}
   - ['&cmo 2', TAB]
   '2':
@@ -63,8 +63,8 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '&cmo 1'
-    - CAPSLOCK
-    - {t: ▽, type: trans}
+    - LSHFT
+    - {t: SPACE, h: RSHFT}
   - - '&cmo 2'
     - {t: ▽, type: trans}
   '3':
@@ -106,7 +106,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '&cmo 1'
-    - {t: ▽, type: trans}
+    - CAPSLOCK
     - {t: ▽, type: trans}
   - - '&cmo 2'
     - {t: ▽, type: trans}
