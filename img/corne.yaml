@@ -47,24 +47,24 @@ layers:
   - - MUTE
     - {t: ▽, type: trans}
     - {t: BACKSPACE, s: DELETE}
-    - ;
-    - $
-    - (
-    - )
+    - {t: ;, h: LCTRL}
+    - {t: $, h: LGUI}
+    - {t: (, h: LALT}
+    - {t: ), h: Sft+Ctl+ LALT}
     - '='
     - {t: ▽, type: trans}
     - LEFT
   - [DOWN, UP, RIGHT, ENTER, ^, '`', '!', '@', '#', \]
   - - {t: ▽, type: trans}
     - HOME
-    - END
-    - PAGE UP
     - PAGE DOWN
+    - PAGE UP
+    - END
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '&cmo 1'
     - LSHFT
-    - {t: SPACE, h: RSHFT}
+    - RSHFT
   - - '&cmo 2'
     - {t: ▽, type: trans}
   '3':
