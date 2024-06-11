@@ -14,16 +14,16 @@ layers:
   - - ''''
     - CANCEL
     - {t: BACKSPACE, s: DELETE}
-    - {t: A, h: LCTRL}
-    - {t: R, h: LGUI}
+    - {t: A, h: LGUI}
+    - {t: R, h: LCTRL}
     - {t: S, h: LALT}
     - {t: T, h: Sft+Ctl+ LALT}
     - G
     - M
     - {t: N, h: Sft+Ctl+ LALT}
   - - {t: E, h: RALT}
-    - {t: I, h: RGUI}
-    - {t: O, h: RCTRL}
+    - {t: I, h: RCTRL}
+    - {t: O, h: RGUI}
     - ENTER
     - {t: ▽, type: trans}
     - Z
@@ -47,8 +47,8 @@ layers:
   - - MUTE
     - {t: ▽, type: trans}
     - {t: BACKSPACE, s: DELETE}
-    - {t: ;, h: LCTRL}
-    - {t: $, h: LGUI}
+    - {t: ;, h: LGUI}
+    - {t: $, h: LCTRL}
     - {t: (, h: LALT}
     - {t: ), h: Sft+Ctl+ LALT}
     - '='
