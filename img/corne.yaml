@@ -90,8 +90,8 @@ layers:
   - - MUTE
     - {t: 1_osx, h: toggle}
     - {t: BACKSPACE, s: DELETE}
-    - {t: ;, h: LGUI}
-    - {t: $, h: LCTRL}
+    - {t: ;, h: LCTRL}
+    - {t: $, h: LGUI}
     - {t: (, h: LALT}
     - {t: ), h: Sft+Ctl+ LALT}
     - '='
@@ -124,8 +124,8 @@ layers:
   - - {t: ▽, type: trans}
     - {t: '1', h: toggle}
     - {t: ▽, type: trans}
-    - {t: ;, h: LCTRL}
-    - {t: $, h: LGUI}
+    - {t: ;, h: LGUI}
+    - {t: $, h: LCTRL}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
