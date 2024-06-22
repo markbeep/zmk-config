@@ -6,10 +6,10 @@
 
 // Layers
 #define L1 0
-#define L1_OSX 0
-#define L2 1
-#define L2_OSX 1
-#define L3 2
+#define L1_OSX 1
+#define L2 2
+#define L2_OSX 3
+#define L3 4
 
 // Meh key
 #define MEH LS(LC(LALT))

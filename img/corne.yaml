@@ -38,7 +38,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - '&cmo 1'
+    - '&cmo 3'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
@@ -81,7 +81,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - '&cmo 1'
+    - '&cmo 3'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
@@ -124,12 +124,12 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - '&cmo 1'
+    - '&cmo 2'
     - CAPSLOCK
     - {t: ▽, type: trans}
-  - - '&cmo 2'
+  - - '&cmo 4'
     - {t: ▽, type: trans}
 combos:
 - p: [6, 7]
   k: PP
-  l: ['1', '1', '2']
+  l: ['1', '2', '3']
