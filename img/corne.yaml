@@ -2,70 +2,89 @@ layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   '1':
   - - {t: ▽, type: trans}
-    - Q
-    - W
-    - F
-    - P
-    - B
-    - J
-    - L
-    - U
-    - Y
-  - - ''''
-    - CANCEL
-    - {t: BACKSPACE, s: DELETE}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: A, h: LGUI}
     - {t: R, h: LCTRL}
-    - {t: S, h: LALT}
-    - {t: T, h: Sft+Ctl+ LALT}
-    - G
-    - M
-    - {t: N, h: Sft+Ctl+ LALT}
-  - - {t: E, h: RALT}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: I, h: RCTRL}
     - {t: O, h: RGUI}
-    - ENTER
     - {t: ▽, type: trans}
-    - Z
-    - X
-    - C
-    - D
-    - V
-  - - K
-    - H
-    - ','
-    - .
-    - /
     - {t: ▽, type: trans}
-    - ESC
-    - '&cmo 1'
-    - LSHFT
-    - {t: SPACE, h: RSHFT}
-  - ['&cmo 2', TAB]
-  '2':
-  - ['%', '*', '&', '[', ']', '-', PREV, VOL DN, VOL UP, NEXT]
-  - - MUTE
     - {t: ▽, type: trans}
-    - {t: BACKSPACE, s: DELETE}
-    - {t: ;, h: LGUI}
-    - {t: $, h: LCTRL}
-    - {t: (, h: LALT}
-    - {t: ), h: Sft+Ctl+ LALT}
-    - '='
     - {t: ▽, type: trans}
-    - LEFT
-  - [DOWN, UP, RIGHT, ENTER, ^, '`', '!', '@', '#', \]
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - HOME
-    - PAGE DOWN
-    - PAGE UP
-    - END
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '&cmo 1'
-    - LSHFT
-    - RSHFT
-  - - '&cmo 2'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  '2':
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: '1', h: toggle}
+    - {t: ▽, type: trans}
+    - {t: ;, h: LCTRL}
+    - {t: $, h: LGUI}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&cmo 1'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   '3':
   - - {t: ▽, type: trans}
@@ -113,4 +132,4 @@ layers:
 combos:
 - p: [6, 7]
   k: PP
-  l: ['1', '2', '3']
+  l: ['1', '1', '2']

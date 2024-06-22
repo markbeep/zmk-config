@@ -6,8 +6,10 @@
 
 #include "base.dtsi"
 
-#include "L1_colemak-dh.dtsi"
+#include "L1.dtsi"
+#include "L1_osx.dtsi"
 
 // Other layers
 #include "L2.dtsi"
+#include "L2_osx.dtsi"
 #include "L3.dtsi"

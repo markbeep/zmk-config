@@ -6,7 +6,9 @@
 
 // Layers
 #define L1 0
+#define L1_OSX 0
 #define L2 1
+#define L2_OSX 1
 #define L3 2
 
 // Meh key
