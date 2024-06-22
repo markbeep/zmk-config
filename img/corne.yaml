@@ -2,6 +2,48 @@ layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   '1':
   - - {t: ▽, type: trans}
+    - Q
+    - W
+    - F
+    - P
+    - B
+    - J
+    - L
+    - U
+    - Y
+  - - ''''
+    - CANCEL
+    - {t: BACKSPACE, s: DELETE}
+    - {t: A, h: LCTRL}
+    - {t: R, h: LGUI}
+    - {t: S, h: LALT}
+    - {t: T, h: Sft+Ctl+ LALT}
+    - G
+    - M
+    - {t: N, h: Sft+Ctl+ LALT}
+  - - {t: E, h: RALT}
+    - {t: I, h: RGUI}
+    - {t: O, h: RCTRL}
+    - ENTER
+    - {t: ▽, type: trans}
+    - Z
+    - X
+    - C
+    - D
+    - V
+  - - K
+    - H
+    - ','
+    - .
+    - /
+    - {t: ▽, type: trans}
+    - ESC
+    - '&cmo 2'
+    - LSHFT
+    - {t: SPACE, h: RSHFT}
+  - ['&cmo 4', TAB]
+  1_osx:
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -44,6 +86,31 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   '2':
+  - ['%', '*', '&', '[', ']', '-', PREV, VOL DN, VOL UP, NEXT]
+  - - MUTE
+    - {t: 1_osx, h: toggle}
+    - {t: BACKSPACE, s: DELETE}
+    - {t: ;, h: LGUI}
+    - {t: $, h: LCTRL}
+    - {t: (, h: LALT}
+    - {t: ), h: Sft+Ctl+ LALT}
+    - '='
+    - {t: ▽, type: trans}
+    - LEFT
+  - [DOWN, UP, RIGHT, ENTER, ^, '`', '!', '@', '#', \]
+  - - {t: ▽, type: trans}
+    - HOME
+    - PAGE DOWN
+    - PAGE UP
+    - END
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&cmo 2'
+    - LSHFT
+    - RSHFT
+  - - '&cmo 4'
+    - {t: ▽, type: trans}
+  2_osx:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
