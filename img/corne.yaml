@@ -112,47 +112,46 @@ layers:
     - {t: ▽, type: trans}
   2_osx:
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: '1', h: toggle}
-    - {t: ▽, type: trans}
+    - Q
+    - W
+    - F
+    - P
+    - B
+    - J
+    - L
+    - U
+    - Y
+  - - ''''
+    - CANCEL
+    - {t: BACKSPACE, s: DELETE}
     - {t: ;, h: LGUI}
     - {t: $, h: LCTRL}
+    - {t: S, h: LALT}
+    - {t: T, h: Sft+Ctl+ LALT}
+    - G
+    - M
+    - {t: N, h: Sft+Ctl+ LALT}
+  - - {t: E, h: RALT}
+    - {t: I, h: RGUI}
+    - {t: O, h: RCTRL}
+    - ENTER
     - {t: ▽, type: trans}
+    - Z
+    - X
+    - C
+    - D
+    - V
+  - - K
+    - H
+    - ','
+    - .
+    - /
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '&cmo 3'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - ESC
+    - '&cmo 2'
+    - LSHFT
+    - {t: SPACE, h: RSHFT}
+  - ['&cmo 4', TAB]
   '3':
   - - {t: ▽, type: trans}
     - F1
