@@ -148,7 +148,7 @@ layers:
     - /
     - {t: ▽, type: trans}
     - ESC
-    - '&cmo 2'
+    - '&cmo 3'
     - LSHFT
     - {t: SPACE, h: RSHFT}
   - ['&cmo 4', TAB]
