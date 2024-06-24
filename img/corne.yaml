@@ -111,47 +111,30 @@ layers:
   - - '&cmo 4'
     - {t: ▽, type: trans}
   2_osx:
-  - - {t: ▽, type: trans}
-    - Q
-    - W
-    - F
-    - P
-    - B
-    - J
-    - L
-    - U
-    - Y
-  - - ''''
-    - CANCEL
+  - ['%', '*', '&', '[', ']', '-', PREV, VOL DN, VOL UP, NEXT]
+  - - MUTE
+    - {t: '1', h: toggle}
     - {t: BACKSPACE, s: DELETE}
     - {t: ;, h: LGUI}
     - {t: $, h: LCTRL}
-    - {t: S, h: LALT}
-    - {t: T, h: Sft+Ctl+ LALT}
-    - G
-    - M
-    - {t: N, h: Sft+Ctl+ LALT}
-  - - {t: E, h: RALT}
-    - {t: I, h: RGUI}
-    - {t: O, h: RCTRL}
-    - ENTER
+    - {t: (, h: LALT}
+    - {t: ), h: Sft+Ctl+ LALT}
+    - '='
     - {t: ▽, type: trans}
-    - Z
-    - X
-    - C
-    - D
-    - V
-  - - K
-    - H
-    - ','
-    - .
-    - /
+    - LEFT
+  - [DOWN, UP, RIGHT, ENTER, ^, '`', '!', '@', '#', \]
+  - - {t: ▽, type: trans}
+    - HOME
+    - PAGE DOWN
+    - PAGE UP
+    - END
     - {t: ▽, type: trans}
-    - ESC
+    - {t: ▽, type: trans}
     - '&cmo 3'
     - LSHFT
-    - {t: SPACE, h: RSHFT}
-  - ['&cmo 4', TAB]
+    - RSHFT
+  - - '&cmo 4'
+    - {t: ▽, type: trans}
   '3':
   - - {t: ▽, type: trans}
     - F1
