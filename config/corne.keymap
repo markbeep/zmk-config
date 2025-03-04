@@ -3,8 +3,10 @@
  *
  * SPDX-License-Identifier: MIT
  */
-#include "base.dtsi"
 
-#include "L1.dtsi"
-#include "L2.dtsi"
-#include "L3.dtsi"
+
+
+#include "base.keymap"
+
+
+/{ chosen { zmk,physical-layout = &foostan_corne_6col_layout; }; };

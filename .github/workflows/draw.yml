@@ -39,8 +39,10 @@ jobs:
       - name: Draw keymaps
         id: draw
         run: |
-          keymap parse -c 10 -z config/corne.keymap >img/corne.yaml
-          keymap draw img/corne.yaml >img/corne.svg
+          sudo apt-get install -y yq
+          keymap -c "draw/config.yaml" parse -z "config/base.keymap" --virtual-layers Combos >"draw/base.yaml"
+          yq -Yi '.combos.[].l = ["Combos"]' "draw/base.yaml"
+          keymap -c "draw/config.yaml" draw "draw/base.yaml" -k "ferris/sweep" >"draw/base.svg"
 
       - name: Get last commit message
         id: last_commit_message
