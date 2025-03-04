@@ -1,3 +1,12 @@
-.venv
-.envrc
+.build
 .direnv
+.west
+modules
+firmware
+zephyr
+zmk
+draw/base.yaml
+.venv
+zmk-auto-layer
+zmk-helpers
+zephyr

@@ -1,35 +1,55 @@
 {
-  description = "An empty flake template that you can adapt to your own environment";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-  # Flake inputs
-  inputs.nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*.tar.gz";
+    # This pins requirements.txt provided by zephyr-nix.pythonEnv.
+    zephyr.url = "github:zmkfirmware/zephyr";
+    zephyr.flake = false;
 
-  # Flake outputs
-  outputs = { self, nixpkgs }:
-    let
-      # The systems supported for this flake
-      supportedSystems = [
-        "x86_64-linux" # 64-bit Intel/AMD Linux
-        "aarch64-linux" # 64-bit ARM Linux
-        "x86_64-darwin" # 64-bit Intel macOS
-        "aarch64-darwin" # 64-bit ARM macOS
-      ];
+    # Zephyr sdk and toolchain.
+    zephyr-nix.url = "github:urob/zephyr-nix";
+    zephyr-nix.inputs.zephyr.follows = "zephyr";
+    zephyr-nix.inputs.nixpkgs.follows = "nixpkgs";
+  };
 
-      # Helper to provide system-specific attributes
-      forEachSupportedSystem = f: nixpkgs.lib.genAttrs supportedSystems (system: f {
-        pkgs = import nixpkgs { inherit system; };
-      });
-    in
-    {
-      devShells = forEachSupportedSystem ({ pkgs }: {
-        default = pkgs.mkShell {
-          venvDir = ".venv";
-          packages = with pkgs; [ python312 yq ] ++
-            (with pkgs.python312Packages; [
-              pip
-              venvShellHook
-            ]);
+  outputs = { nixpkgs, zephyr-nix, ... }: let
+    systems = ["x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin"];
+    forAllSystems = nixpkgs.lib.genAttrs systems;
+  in {
+    devShells = forAllSystems (
+      system: let
+        pkgs = nixpkgs.legacyPackages.${system};
+        zephyr = zephyr-nix.packages.${system};
+      in {
+        default = pkgs.mkShellNoCC {
+          packages =
+            [
+              zephyr.pythonEnv
+              (zephyr.sdk-0_16.override {targets = ["arm-zephyr-eabi"];})
+
+              pkgs.cmake
+              pkgs.dtc
+              pkgs.ninja
+
+              pkgs.just
+              pkgs.yq # Make sure yq resolves to python-yq.
+
+              # -- Used by just_recipes and west_commands. Most systems already have them. --
+              # pkgs.gawk
+              # pkgs.unixtools.column
+              # pkgs.coreutils # cp, cut, echo, mkdir, sort, tail, tee, uniq, wc
+              # pkgs.diffutils
+              # pkgs.findutils # find, xargs
+              # pkgs.gnugrep
+              # pkgs.gnused
+            ];
+
+          shellHook = ''
+            export ZMK_BUILD_DIR=$(pwd)/.build;
+            export ZMK_SRC_DIR=$(pwd)/zmk/app;
+          '';
         };
-      });
-    };
+      }
+    );
+  };
 }

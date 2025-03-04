@@ -3,11 +3,8 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 #include "base.dtsi"
 
 #include "L1.dtsi"
-
-// Other layers
 #include "L2.dtsi"
 #include "L3.dtsi"
