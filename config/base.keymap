@@ -16,7 +16,7 @@
 
 /* Global defaults */
 
-#define QUICK_TAP_MS 100
+#define QUICK_TAP_MS 150
 
 &sk {
   release-after-ms = <900>;
@@ -41,8 +41,8 @@
 
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                                 \
   ZMK_HOLD_TAP(NAME, bindings = <HOLD>, <TAP>; flavor = "balanced";            \
-               tapping-term-ms = <150>; quick-tap-ms = <QUICK_TAP_MS>;         \
-               require-prior-idle-ms = <100>; hold-trigger-on-release;         \
+               tapping-term-ms = <250>; quick-tap-ms = <QUICK_TAP_MS>;         \
+               require-prior-idle-ms = <150>; hold-trigger-on-release;         \
                hold-trigger-key-positions = <TRIGGER_POS>;)
 
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS) // Left-hand HRMs.
@@ -135,13 +135,13 @@ ZMK_LAYER(Base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     ___          &kp Z         &kp X         &kp C         &kp D         &kp V           &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH      ___          
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                             &kp ESC       &mo NAV       &kp LSHFT       SPC_SHFT      &mo NUM       &kp TAB
+                                             &kp ESC       &mo NAV       &kp LSHFT       &kp SPACE     &mo NUM       &kp TAB
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 )
 
 ZMK_LAYER(Nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-   &kp PERCENT   &kp STAR      &kp AMPERSAND &kp LBKT      &kp RBKT      &kp MINUS       &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT    &kp C_MUTE     ___          
+   &kp PERCENT   &kp STAR      &kp AMPERSAND &kp LBKT      &kp RBKT      &kp MINUS       &kp C_PREV    &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE    &kp C_PP          
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
    &bs_del       LCTRL_SEMCOL  LGUI_DOL      LALT_PAR      MEH_PAR       &kp EQUAL        ___          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp ENTER     
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -153,7 +153,7 @@ ZMK_LAYER(Nav,
 
 ZMK_LAYER(Num,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    ___          &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           ___          &kp N7        &kp N8        &kp N9         ___           ___          
+    ___          &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           ___          &kp N7        &kp N8        &kp N9         ___          &kp PSCRN          
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
    &bs_del       &kp F6        &kp F7        &kp F8        &kp F9        &kp F10         &kp N0        &kp N4        &kp N5        &kp N6         ___          &kp ENTER     
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
