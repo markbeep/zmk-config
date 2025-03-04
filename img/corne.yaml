@@ -1,99 +1,38 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  '1':
-  - - {t: ▽, type: trans}
-    - Q
-    - W
-    - F
-    - P
-    - B
-    - J
-    - L
-    - U
-    - Y
+  L1:
+  - [LALT, Q, W, F, P, B, J, L, U, Y]
   - - ''''
-    - CANCEL
+    - Sft+Ctl+LALT
     - {t: BACKSPACE, s: DELETE}
-    - {t: A, h: LCTRL}
-    - {t: R, h: LGUI}
-    - {t: S, h: LALT}
-    - {t: T, h: Sft+Ctl+ LALT}
+    - A
+    - R
+    - S
+    - T
     - G
     - M
-    - {t: N, h: Sft+Ctl+ LALT}
-  - - {t: E, h: RALT}
-    - {t: I, h: RGUI}
-    - {t: O, h: RCTRL}
-    - ENTER
-    - {t: ▽, type: trans}
-    - Z
-    - X
-    - C
-    - D
-    - V
+    - N
+  - [E, I, O, ENTER, LCTRL, Z, X, C, D, V]
   - - K
     - H
     - ','
     - .
     - /
-    - {t: ▽, type: trans}
+    - LGUI
     - ESC
     - '&cmo 2'
     - LSHFT
     - {t: SPACE, h: RSHFT}
   - ['&cmo 4', TAB]
-  1_osx:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: A, h: LGUI}
-    - {t: R, h: LCTRL}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: I, h: RCTRL}
-    - {t: O, h: RGUI}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '&cmo 3'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  '2':
+  L2:
   - ['%', '*', '&', '[', ']', '-', PREV, VOL DN, VOL UP, NEXT]
   - - MUTE
-    - {t: 1_osx, h: toggle}
+    - {t: L2, h: toggle}
     - {t: BACKSPACE, s: DELETE}
     - {t: ;, h: LCTRL}
     - {t: $, h: LGUI}
     - {t: (, h: LALT}
-    - {t: ), h: Sft+Ctl+ LALT}
+    - {t: ), h: Sft+Ctl+LALT}
     - '='
     - {t: ▽, type: trans}
     - LEFT
@@ -110,32 +49,7 @@ layers:
     - RSHFT
   - - '&cmo 4'
     - {t: ▽, type: trans}
-  2_osx:
-  - ['%', '*', '&', '[', ']', '-', PREV, VOL DN, VOL UP, NEXT]
-  - - MUTE
-    - {t: '1', h: toggle}
-    - {t: BACKSPACE, s: DELETE}
-    - {t: ;, h: LGUI}
-    - {t: $, h: LCTRL}
-    - {t: (, h: LALT}
-    - {t: ), h: Sft+Ctl+ LALT}
-    - '='
-    - {t: ▽, type: trans}
-    - LEFT
-  - [DOWN, UP, RIGHT, ENTER, ^, '`', '!', '@', '#', \]
-  - - {t: ▽, type: trans}
-    - HOME
-    - PAGE DOWN
-    - PAGE UP
-    - END
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '&cmo 3'
-    - LSHFT
-    - RSHFT
-  - - '&cmo 4'
-    - {t: ▽, type: trans}
-  '3':
+  L3:
   - - {t: ▽, type: trans}
     - F1
     - F2
@@ -178,7 +92,3 @@ layers:
     - {t: ▽, type: trans}
   - - '&cmo 4'
     - {t: ▽, type: trans}
-combos:
-- p: [6, 7]
-  k: PP
-  l: ['1', '2', '3']
