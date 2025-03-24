@@ -7,4 +7,6 @@ just init
 just build all
 ```
 
+Files are then located in `firmware/`
+
 ![](img/corne.svg)
