@@ -14,4 +14,4 @@ XDG_RUNTIME_DIR=/tmp just build all
 
 Files are then located in `firmware/`
 
-![](img/corne.svg)
+![](draw/corne.svg)

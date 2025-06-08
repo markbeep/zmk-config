@@ -20,6 +20,7 @@
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
         zephyr = zephyr-nix.packages.${system};
+        keymap_drawer = pkgs.python3Packages.callPackage ./nix/keymap-drawer.nix {};
       in {
         default = pkgs.mkShellNoCC {
           packages =
@@ -34,6 +35,8 @@
               pkgs.just
               pkgs.yq # Make sure yq resolves to python-yq.
 
+              keymap_drawer
+
               # -- Used by just_recipes and west_commands. Most systems already have them. --
               # pkgs.gawk
               # pkgs.unixtools.column
@@ -47,6 +50,7 @@
           shellHook = ''
             export ZMK_BUILD_DIR=$(pwd)/.build;
             export ZMK_SRC_DIR=$(pwd)/zmk/app;
+            export XDG_RUNTIME_DIR=/tmp;
           '';
         };
       }
