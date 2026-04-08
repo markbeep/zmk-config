@@ -1,0 +1,12 @@
+[tools]
+cmake = "latest"
+"http:zephyr-sdk" = { version = "0.16.5", url = "https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v{{ version }}/zephyr-sdk-{{ version }}_linux-x86_64.tar.xz" }
+just = "latest"
+ninja = "latest"
+pipx = "latest"
+"pipx:keymap-drawer" = "latest"
+"pipx:west" = { version = "latest", pipx_args = "--preinstall pyelftools" }
+yq = "latest"
+
+[env]
+CMAKE_PREFIX_PATH = { value = "{{ tools['http:zephyr-sdk'].path }}", tools = true }
