@@ -116,11 +116,11 @@ ZMK_MOD_MORPH(bs_del, bindings = <&kp BSPC>, <&kp DEL>;
 
 #define MEH LS(LC(LALT))
 
-#define SPC_SHFT      &mt RSHFT SPACE
+#define SPC_SHFT      &mt  RSHFT SPACE
 #define LCTRL_SEMCOL  &hml LCTRL SEMICOLON
-#define LGUI_DOL      &hml LGUI DOLLAR
-#define LALT_PAR      &hml LALT LPAR
-#define MEH_PAR       &hml MEH RPAR
+#define LGUI_DOL      &hml LGUI  DOLLAR
+#define LALT_PAR      &hml LALT  LPAR
+#define MEH_PAR       &hml MEH   RPAR
 /* Keymap */
 
 
@@ -128,7 +128,7 @@ ZMK_LAYER(Base,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     ___          &kp Q         &kp W         &kp F         &kp P         &kp B           &kp J         &kp L         &kp U         &kp Y         &kp SQT        ___
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-   &bs_del       &hml LCTRL A  &hml LGUI R   &hml LALT S   &hml MEH T    &kp G           &kp M         &hmr MEH N    &hmr LALT E   &hmr LGUI I   &hmr LCTRL O  &kp RET
+   &bs_del       &hml LCTRL A  &hml LGUI R   &hml LALT S   &hml MEH T    &kp G           &kp M         &hmr MEH N    &hmr RALT E   &hmr LGUI I   &hmr LCTRL O  &kp RET
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     ___          &kp Z         &kp X         &kp C         &kp D         &kp V           &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH      ___
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴───────────────────────────╯
