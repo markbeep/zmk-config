@@ -1,4 +1,10 @@
-https://github.com/urob/zmk-config
+Keymap, loosely based on [urob](https://github.com/urob/zmk-config) and [reddit](https://old.reddit.com/r/crkbd/comments/12y5hip/coding_layout/jhlya5m/).
+
+### Online Editor
+
+Online keymap editor:
+
+https://nickcoutsos.github.io/keymap-editor/
 
 ### Tools
 
