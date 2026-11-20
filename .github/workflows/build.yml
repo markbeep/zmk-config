@@ -25,7 +25,7 @@ jobs:
       - name: Commit updated images
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          file_pattern: "img/*.svg img/*.yaml"
+          file_pattern: "draw/*.svg"
           commit_message: updated kbd images
 
       - name: Upload artifacts
@@ -34,4 +34,4 @@ jobs:
           name: "artifacts"
           path: |
             firmware/*.uf2
-            img/corne.svg
+            draw/*.svg

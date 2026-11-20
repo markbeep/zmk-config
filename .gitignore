@@ -5,7 +5,7 @@ modules
 firmware
 zephyr
 zmk
-draw/base.yaml
+draw/corne_*.yaml
 .venv
 zmk-auto-layer
 zmk-helpers
